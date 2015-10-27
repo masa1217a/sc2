@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">MENU</string>
+
+    <string name="user_name"></string>
+
+    <string name="title_section1">TOP</string>
+    <string name="title_section2">NEWS</string>
+    <string name="title_section3">ACCESS</string>
+    <string name="title_section4">SCHEDULE</string>
+    <string name="title_section5">MAIL</string>
+    <string name="title_section6">MAP</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+
+    <string name="action_settings">SETTINGS</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imageView"
+        android:src="@drawable/back"
+        android:scaleType="centerCrop"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="SCHEDULE"
+        android:id="@+id/textView2"
+        android:textSize="50dp"
+        android:textColor="#66dac8"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="東北職業能力開発大学校"
+        android:id="@+id/textView3"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:textSize="54dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TOHOKU POLYTECHNIC COLLEGE"
+        android:id="@+id/textView4"
+        android:textSize="30dp"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:textColor="#66dac8" />
+
+
+
+
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/ScrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".MainActivity"
+            android:layout_below="@+id/textView2">
+
+
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="30dp"
+        android:background="#B0C4DE"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textView2">
+
+        <TextView android:text="April"
+            android:id="@+id/textView5"
+            android:gravity="top"
+            android:background="#33B5E5"
+            android:layout_width="fill_parent"
+            android:layout_height="48dip"
+            android:textSize="40dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4/3 入学式"
+            android:id="@+id/textView6"
+            android:textSize="20dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4/22 交通安全講話"
+            android:id="@+id/textView7"
+            android:textSize="20dp" />
+
+
+        <TextView
+            android:gravity="top"
+            android:background="#33B5E5"
+            android:layout_width="fill_parent"
+            android:layout_height="48dip"
+            android:text="May"
+            android:id="@+id/textView8"
+            android:textSize="40dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5/8 定期"
+            android:id="@+id/textView9"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5/19 学校説明会（高校教諭対象）"
+            android:id="@+id/textView10"
+            android:textSize="20dp" />
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5/20 くりはらジョブ・フェア-春"
+        android:id="@+id/textView11"
+        android:textSize="20dp" />
+
+        <TextView
+            android:gravity="top"
+            android:background="#33B5E5"
+            android:layout_width="fill_parent"
+            android:layout_height="48dip"
+            android:text="June"
+            android:id="@+id/textView12"
+            android:textSize="40dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6/3 応用課程推薦入試"
+            android:id="@+id/textView13"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6/24 防災訓練"
+            android:id="@+id/textView14"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6/27 第1回オープンキャンパス"
+            android:id="@+id/textView15"
+            android:textSize="20dp" />
+
+        <TextView
+            android:gravity="top"
+            android:background="#33B5E5"
+            android:layout_width="fill_parent"
+            android:layout_height="48dip"
+            android:text="July"
+            android:id="@+id/textView16"
+            android:textSize="40dp" />
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="7/8 応用課程一般入試"
+        android:id="@+id/textView17"
+        android:textSize="20dp" />
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="7/25 学園祭 第2回オープンキャンパス"
+        android:id="@+id/textView18"
+        android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7/28~ 夏期休暇"
+            android:id="@+id/textView19"
+            android:textSize="20dp" />
+
+        <TextView
+            android:gravity="top"
+            android:background="#33B5E5"
+            android:layout_width="fill_parent"
+            android:layout_height="48dip"
+            android:text="August"
+            android:id="@+id/textView20"
+            android:textSize="40dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="~8/23 夏期休暇"
+            android:id="@+id/textView21"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8/22 第3回オープンキャンパス"
+            android:id="@+id/textView22"
+            android:textSize="20dp" />
+
+        <TextView
+            android:gravity="top"
+            android:background="#33B5E5"
+            android:layout_width="fill_parent"
+            android:layout_height="48dip"
+            android:text="September"
+            android:id="@+id/textView23"
+            android:textSize="40dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9/25　球技大会"
+            android:id="@+id/textView24"
+            android:textSize="20dp" />
+
+        <TextView
+            android:gravity="top"
+            android:background="#33B5E5"
+            android:layout_width="fill_parent"
+            android:layout_height="48dip"
+            android:text="October"
+            android:id="@+id/textView25"
+            android:textSize="40dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10/3　東北ポリテックビジョンin栗原"
+            android:id="@+id/textView26"
+            android:textSize="20dp" />
+
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10/24　専門課程特別推薦入試"
+        android:id="@+id/textView27"
+        android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10/31　第4回オープンキャンパス"
+            android:id="@+id/textView28"
+            android:textSize="20dp" />
+
+
+        <TextView
+            android:gravity="top"
+            android:background="#33B5E5"
+            android:layout_width="fill_parent"
+            android:layout_height="48dip"
+            android:text="November"
+            android:id="@+id/textView29"
+            android:textSize="40dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11/14　専門課程一般公募推薦入試"
+            android:id="@+id/textView30"
+            android:textSize="20dp" />
+
+        <TextView
+            android:gravity="top"
+            android:background="#33B5E5"
+            android:layout_width="fill_parent"
+            android:layout_height="48dip"
+            android:text="December"
+            android:id="@+id/textView31"
+            android:textSize="40dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12/12 専門課程自己推薦入試・事業主推薦入試A日程"
+            android:id="@+id/textView32"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12/23~ 冬期休暇"
+            android:id="@+id/textView33"
+            android:textSize="20dp" />
+
+        <TextView
+            android:gravity="top"
+            android:background="#33B5E5"
+            android:layout_width="fill_parent"
+            android:layout_height="48dip"
+            android:text="January"
+            android:id="@+id/textView34"
+            android:textSize="40dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="~1/5 冬期休暇"
+            android:id="@+id/textView35"
+            android:textSize="20dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="~1/22 合同業界研究会"
+            android:id="@+id/textView36"
+            android:textSize="20dp" />
+
+
+        <TextView
+            android:gravity="top"
+            android:background="#33B5E5"
+            android:layout_width="fill_parent"
+            android:layout_height="48dip"
+            android:text="February"
+            android:id="@+id/textView37"
+            android:textSize="40dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2/4 専門課程一般入試"
+            android:id="@+id/textView38"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2/19~20 東北ポリテックビジョン"
+            android:id="@+id/textView39"
+            android:textSize="20dp" />
+
+
+        <TextView
+            android:gravity="top"
+            android:background="#33B5E5"
+            android:layout_width="fill_parent"
+            android:layout_height="48dip"
+            android:text="March"
+            android:id="@+id/textView40"
+            android:textSize="40dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3/10 専門課程自己推薦入試・事業主推薦入試B日程"
+            android:id="@+id/textView41"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3/18 卒業式"
+            android:id="@+id/textView42"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3/19~　春期休暇"
+            android:id="@+id/textView43"
+            android:textSize="20dp" />
+
+
+
+
+
+
+    </LinearLayout>
+
+        </ScrollView>
+
+</RelativeLayout>

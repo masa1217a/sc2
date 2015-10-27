@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imageViewback"
+        android:src="@drawable/back"
+        android:scaleType="centerCrop"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/ScrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".MainActivity" >
+
+
+
+                <RelativeLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+                <ImageView
+                    android:id="@+id/imageview1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/grid_img_01"
+                    android:layout_below="@+id/textView"
+                    android:layout_alignStart="@+id/textView4" />
+
+                <ImageView
+                    android:id="@+id/imageview2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/grid_img_02"
+                    android:layout_alignTop="@+id/imageview1"
+                    android:layout_alignEnd="@+id/textView4" />
+
+                <ImageView
+                    android:id="@+id/imageview3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/grid_img_03"
+                    android:layout_marginTop="25dp"
+                    android:layout_below="@+id/imageview2"
+                    android:layout_alignStart="@+id/imageview2" />
+
+                <ImageView
+                    android:id="@+id/imageview4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/grid_img_04"
+                    android:layout_above="@+id/imageview5"
+                    android:layout_alignStart="@+id/imageview1" />
+
+                <ImageView
+                    android:id="@+id/imageview5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/grid_img_05"
+                    android:layout_marginTop="30dp"
+                    android:layout_below="@+id/imageview3"
+                    android:layout_alignStart="@+id/imageview2" />
+
+                <ImageView
+                    android:id="@+id/imageview6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/grid_img_06"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignStart="@+id/imageview4" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView"
+                        android:textSize="50dp"
+                        android:singleLine="false"
+                        android:text="TOP"
+                        android:textColor="#66dac8"
+                        android:layout_below="@+id/textView4"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="東北職業能力開発大学校"
+                        android:id="@+id/textView3"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true"
+                        android:textSize="54dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TOHOKU POLYTECHNIC COLLEGE"
+                        android:id="@+id/textView4"
+                        android:textSize="30dp"
+                        android:layout_below="@+id/textView3"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="#66dac8" />
+
+
+
+
+                </RelativeLayout>
+        </ScrollView>
+</RelativeLayout>
