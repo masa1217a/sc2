@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/android-cloud-sdk-v2.3.0/android-cloud-sdk-v2.3.0.iml" filepath="$PROJECT_DIR$/android-cloud-sdk-v2.3.0/android-cloud-sdk-v2.3.0.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/sc2.iml" filepath="$PROJECT_DIR$/sc2.iml" />
     </modules>
