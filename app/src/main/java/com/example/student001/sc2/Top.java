@@ -118,6 +118,8 @@ public class Top extends ActionBarActivity
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+            Intent intent = new Intent(this, LoginActivity.class);
+            startActivity(intent);
             return true;
         }
 
