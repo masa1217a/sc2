@@ -39,7 +39,6 @@ public class LoginActivity extends AppCompatActivity {
         kiiManager.login(editUsername.getText().toString(), editPassword.getText().toString(), new KiiManager.OnFinishActionListener() {
             @Override
             public void onSuccess() {
-                // ログイン成功時の処理
                 finish();
             }
             @Override
