@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">MENU</string>
 
+    <string name="kii_app_id">f6ebbe80</string>
+    <string name="kii_app_key">ecad51fa1cc703b9467ac4deaa4ea145</string>
+
     <string name="user_name"></string>
 
     <string name="title_section1">TOP</string>

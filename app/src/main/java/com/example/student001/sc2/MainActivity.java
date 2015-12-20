@@ -7,17 +7,21 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Bundle;
-import android.preference.DialogPreference;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 
 import com.kii.cloud.storage.Kii;
 
-import java.security.Permissions;
+import org.json.JSONObject;
+
 import java.util.ArrayList;
+
+import jp.itnav.derushio.kiimanager.KiiManager;
 
 
 public class MainActivity extends AppCompatActivity {
+
+	// ActivityForResult REQUEST_CODE
+	public static final int REQUEST_CODE_LOGIN = 0;
 
     private KiiManager kiiManager;
 
@@ -80,21 +84,19 @@ public class MainActivity extends AppCompatActivity {
             super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         }
 
-        private void loginWithStoredCredentials() {
-            kiiManager = KiiManager.getInstance(this);
-            kiiManager.loginWithStoredCredentials(new KiiManager.OnFinishActionListener() {
-                    @Override
-                    public void onSuccess() {
-                        Log.d("loginWithSC", "success");
-                        // TODO データのやり取りのサンプル
-                    }
+	private void loginWithStoredCredentials() {
+		kiiManager = KiiManager.getInstance();
+		kiiManager.kiiInit(this, getString(R.string.kii_app_id), getString(R.string.kii_app_key), Kii.Site.JP);
+		kiiManager.loginWithStoredCredentials(new KiiManager.OnFinishActionListener() {
+			@Override
+			public void onSuccess(JSONObject data) {
+			}
 
-                    @Override
-                    public void onFail(Exception e){
-                        Intent intent = new Intent(MainActivity.this, LoginActivity.class);
-                        startActivity(intent);
-                    }
-            });
-        }
-
+			@Override
+			public void onFail(Exception e) {
+				Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+				startActivityForResult(intent, REQUEST_CODE_LOGIN);
+			}
+		});
+	}
 }

@@ -1,1 +1,1 @@
-include ':app', ':android-cloud-sdk-v2.3.0'
+include ':app', ':android-cloud-sdk-v2.3.0', ':derushio-kiimanager-0.0.1'
