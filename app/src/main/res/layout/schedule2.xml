@@ -1,572 +1,1070 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:weightSum="1">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="210dp"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:id="@+id/text1"
-        android:text="TOHOKU POLYTECHNIC COLLEGE"
-        android:textSize="60dp"
-        android:textIsSelectable="true"
-        android:background="#F4511E"
-        android:textColor="#EEEEEE"
-        android:layout_alignParentEnd="true" />
 
     <TextView
+        android:id="@+id/text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:autoText="false"
+        android:background="#D84315"
         android:text="SCHEDULE"
-        android:id="@+id/text2"
-        android:textSize="40dp"
         android:textColor="#EEEEEE"
-        android:typeface="monospace"
-        android:layout_above="@+id/ScrollView1"
-        android:layout_alignParentEnd="true" />
+        android:textIsSelectable="false"
+        android:textSize="60dp" />
 
-
-    <ScrollView
-        xmlns:android="http://schemas.android.com/apk/res/android"
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:id="@+id/ScrollView1"
         android:layout_width="846dp"
         android:layout_height="match_parent"
-        tools:context=".MainActivity"
-        android:layout_gravity="center|top"
-        android:fillViewport="false"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_below="@+id/text1">
+        android:layout_below="@+id/text"
+
+        android:layout_gravity="center|top"
+        android:fillViewport="false"
+        tools:context=".MainActivity">
 
 
+        
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignTop="@+id/ScrollView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+
+            android:orientation="vertical"
+            android:padding="30dp"
+            android:weightSum="1">
 
 
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="30dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:weightSum="1"
-        android:layout_centerHorizontal="true"
-        android:layout_alignTop="@+id/ScrollView1">
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:autoText="false"
+                android:background="#c62828"
+                android:text="4"
+                android:textColor="#EEEEEE"
+                android:textIsSelectable="false"
+                android:textSize="40dp" />
+
+            <TextView
+                android:id="@+id/text4"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/text3"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="23dp"
+                android:layout_weight="2.46"
+                android:text="april"
+                android:textColor="#EEEEEE"
+                android:textIsSelectable="false"
+                android:textSize="28dp" />
+
+            <TextView
+                android:id="@+id/text5"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/text3"
+                android:layout_weight="2.46"
+                android:background="#e53935"
+                android:text="   /3"
+                android:textColor="#EEEEEE"
+                android:textIsSelectable="false"
+                android:textSize="28dp" />
 
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="4"
-            android:id="@+id/text3"
-            android:textSize="40dp"
-            android:textIsSelectable="false"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:background="#00838F"
-            android:autoText="false"
-            android:textColor="#EEEEEE" />
+            <TextView
+                android:id="@+id/text6"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/text4"
+                android:layout_below="@+id/text3"
+                android:layout_marginStart="56dp"
+                android:layout_weight="2.46"
+                android:background="#e53935"
+                android:text="入学式"
+                android:textColor="#EEEEEE"
+                android:textIsSelectable="false"
+                android:textSize="28dp" />
 
-        <TextView
-            android:layout_width="118dp"
-            android:layout_height="wrap_content"
-            android:text="april"
-            android:id="@+id/text4"
-            android:textSize="28dp"
-            android:layout_weight="2.46"
-            android:textIsSelectable="false"
-            android:layout_marginStart="23dp"
-            android:layout_alignBottom="@+id/text3"
-            android:layout_alignParentStart="true"
-            android:textColor="#EEEEEE" />
+            <TextView
+                android:id="@+id/text7"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/text5"
+                android:layout_weight="2.46"
+                android:background="#e53935"
+                android:text="   /22"
+                android:textColor="#EEEEEE"
+                android:textIsSelectable="false"
+                android:textSize="28dp" />
 
-        <TextView
-            android:layout_width="118dp"
-            android:layout_height="wrap_content"
-            android:text="   /3"
-            android:id="@+id/text5"
-            android:textSize="28dp"
-            android:layout_weight="2.46"
-            android:textIsSelectable="false"
-            android:background="#00ACC1"
-            android:layout_below="@+id/text3"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentStart="true"
-            android:textColor="#EEEEEE" />
-
-
-        <TextView
-            android:layout_width="118dp"
-            android:layout_height="wrap_content"
-            android:text="入学式"
-            android:id="@+id/text6"
-            android:textSize="28dp"
-            android:layout_weight="2.46"
-            android:textIsSelectable="false"
-            android:background="#00ACC1"
-            android:layout_marginStart="56dp"
-            android:layout_below="@+id/text3"
-            android:layout_alignStart="@+id/text4"
-            android:textColor="#EEEEEE" />
-
-        <TextView
-            android:layout_width="118dp"
-            android:layout_height="wrap_content"
-            android:text="   /22"
-            android:id="@+id/text7"
-            android:textSize="28dp"
-            android:layout_weight="2.46"
-            android:textIsSelectable="false"
-            android:background="#00ACC1"
-            android:layout_below="@+id/text5"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:textColor="#EEEEEE" />
-
-        <TextView
-            android:layout_width="118dp"
-            android:layout_height="wrap_content"
-            android:text="安全講話"
-            android:id="@+id/text8"
-            android:textSize="28dp"
-            android:layout_weight="2.46"
-            android:textIsSelectable="false"
-            android:background="#00ACC1"
-            android:layout_below="@+id/text5"
-            android:layout_alignStart="@+id/text6"
-            android:textColor="#EEEEEE" />
+            <TextView
+                android:id="@+id/text8"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/text6"
+                android:layout_below="@+id/text5"
+                android:layout_weight="2.46"
+                android:background="#e53935"
+                android:text="安全講話"
+                android:textColor="#EEEEEE"
+                android:textIsSelectable="false"
+                android:textSize="28dp" />
 
 
-        <TextView
-            android:layout_width="118dp"
-            android:layout_height="wrap_content"
-            android:text="5"
-            android:id="@+id/text9"
-            android:textSize="40dp"
-            android:layout_weight="2.46"
-            android:background="#283593"
-            android:textColor="#EEEEEE"
-            android:layout_below="@+id/text7"
-            android:layout_alignStart="@+id/text7"
-            android:layout_alignParentEnd="true" />
+            <TextView
+                android:id="@+id/text9"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignStart="@+id/text7"
+                android:layout_below="@+id/text7"
+                android:layout_weight="2.46"
+                android:background="#AD1457"
+                android:text="5"
+                android:textColor="#EEEEEE"
+                android:textSize="40dp" />
 
-        <TextView
-            android:layout_width="118dp"
-            android:layout_height="wrap_content"
-            android:text="may"
-            android:id="@+id/text10"
-            android:textSize="28dp"
-            android:layout_weight="2.46"
-            android:textIsSelectable="false"
-            android:textColor="#EEEEEE"
-            android:layout_alignBottom="@+id/text9"
-            android:layout_alignStart="@+id/text4" />
+            <TextView
+                android:id="@+id/text10"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/text9"
+                android:layout_alignStart="@+id/text4"
+                android:layout_weight="2.46"
+                android:text="may"
+                android:textColor="#EEEEEE"
+                android:textIsSelectable="false"
+                android:textSize="28dp" />
 
-        <TextView
-            android:layout_width="118dp"
-            android:layout_height="wrap_content"
-            android:text="   /19"
-            android:id="@+id/text11"
-            android:textSize="28dp"
-            android:layout_weight="2.46"
-            android:textIsSelectable="false"
-            android:textColor="#EEEEEE"
-            android:layout_below="@+id/text9"
-            android:layout_alignStart="@+id/text9"
-            android:background="#3949AB"
-            android:layout_alignParentEnd="true" />
+            <TextView
+                android:id="@+id/text11"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignStart="@+id/text9"
+                android:layout_below="@+id/text9"
+                android:layout_weight="2.46"
+                android:background="#D81B60"
+                android:text="   /19"
+                android:textColor="#EEEEEE"
+                android:textIsSelectable="false"
+                android:textSize="28dp" />
 
-        <TextView
-            android:layout_width="118dp"
-            android:layout_height="wrap_content"
-            android:text="学校説明会"
-            android:id="@+id/text12"
-            android:textSize="28dp"
-            android:layout_weight="2.46"
-            android:textIsSelectable="false"
-            android:textColor="#EEEEEE"
-            android:background="#3949AB"
-            android:layout_alignTop="@+id/text11"
-            android:layout_alignStart="@+id/text8" />
+            <TextView
+                android:id="@+id/text12"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/text8"
+                android:layout_alignTop="@+id/text11"
+                android:layout_weight="2.46"
+                android:background="#D81B60"
+                android:text="学校説明会"
+                android:textColor="#EEEEEE"
+                android:textIsSelectable="false"
+                android:textSize="28dp" />
 
-        <TextView
-            android:layout_width="118dp"
-            android:layout_height="wrap_content"
-            android:text="   /20"
-            android:id="@+id/text13"
-            android:textSize="28dp"
-            android:layout_weight="2.46"
-            android:textIsSelectable="false"
-            android:textColor="#EEEEEE"
-            android:background="#3949AB"
-            android:layout_below="@+id/text11"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentStart="true" />
+            <TextView
+                android:id="@+id/text13"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/text11"
+                android:layout_weight="2.46"
+                android:background="#D81B60"
+                android:text="   /20"
+                android:textColor="#EEEEEE"
+                android:textIsSelectable="false"
+                android:textSize="28dp" />
 
-        <TextView
-            android:layout_width="118dp"
-            android:layout_height="wrap_content"
-            android:text="くりはらジョブ・フェア -春-"
-            android:id="@+id/text14"
-            android:textSize="28dp"
-            android:layout_weight="2.46"
-            android:textIsSelectable="false"
-            android:textColor="#EEEEEE"
-            android:background="#3949AB"
-            android:layout_alignStart="@+id/text12"
-            android:layout_below="@+id/text11"
-            android:layout_alignEnd="@+id/text11" />
+            <TextView
+                android:id="@+id/text14"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/text11"
+                android:layout_alignStart="@+id/text12"
+                android:layout_below="@+id/text11"
+                android:layout_weight="2.46"
+                android:background="#D81B60"
+                android:text="くりはらジョブ・フェア -春-"
+                android:textColor="#EEEEEE"
+                android:textIsSelectable="false"
+                android:textSize="28dp" />
 
-        <TextView
-            android:layout_width="118dp"
-            android:layout_height="wrap_content"
-            android:text="6"
-            android:id="@+id/text15"
-            android:textSize="40dp"
-            android:layout_weight="2.46"
-            android:background="#c62828"
-            android:textColor="#EEEEEE"
-            android:layout_below="@+id/text12"
-            android:layout_alignParentStart="true"
-            android:layout_alignEnd="@+id/text13" />
+            <TextView
+                android:id="@+id/text15"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/text13"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/text12"
+                android:layout_weight="2.46"
+                android:background="#6A1B9A"
+                android:text="6"
+                android:textColor="#EEEEEE"
+                android:textSize="40dp" />
 
-        <TextView
-            android:layout_width="118dp"
-            android:layout_height="wrap_content"
-            android:text="june"
-            android:id="@+id/text16"
-            android:textSize="28dp"
-            android:layout_weight="2.46"
-            android:textIsSelectable="false"
-            android:textColor="#EEEEEE"
-            android:layout_alignBottom="@+id/text15"
-            android:layout_alignStart="@+id/text10" />
+            <TextView
+                android:id="@+id/text16"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/text15"
+                android:layout_alignStart="@+id/text10"
+                android:layout_weight="2.46"
+                android:text="june"
+                android:textColor="#EEEEEE"
+                android:textIsSelectable="false"
+                android:textSize="28dp" />
 
-        <TextView
-            android:layout_width="118dp"
-            android:layout_height="wrap_content"
-            android:text="   /3"
-            android:id="@+id/text17"
-            android:textSize="28dp"
-            android:layout_weight="2.46"
-            android:textIsSelectable="false"
-            android:textColor="#EEEEEE"
-            android:background="#e53935"
-            android:layout_below="@+id/text15"
-            android:layout_alignParentStart="true" />
+            <TextView
+                android:id="@+id/text17"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/text15"
+                android:layout_weight="2.46"
+                android:background="#8E24AA"
+                android:text="   /3"
+                android:textColor="#EEEEEE"
+                android:textIsSelectable="false"
+                android:textSize="28dp" />
 
-        <TextView
-            android:layout_width="118dp"
-            android:layout_height="wrap_content"
-            android:text="応用課程推薦入試"
-            android:id="@+id/text18"
-            android:textSize="28dp"
-            android:layout_weight="2.46"
-            android:textIsSelectable="false"
-            android:textColor="#EEEEEE"
-            android:background="#e53935"
-            android:layout_alignTop="@+id/text17"
-            android:layout_alignStart="@+id/text12"
-            android:layout_alignBottom="@+id/text17"
-            android:layout_alignEnd="@+id/text15" />
+            <TextView
+                android:id="@+id/text18"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/text17"
+                android:layout_alignEnd="@+id/text15"
+                android:layout_alignStart="@+id/text12"
+                android:layout_alignTop="@+id/text17"
+                android:layout_weight="2.46"
+                android:background="#8E24AA"
+                android:text="応用課程推薦入試"
+                android:textColor="#EEEEEE"
+                android:textIsSelectable="false"
+                android:textSize="28dp" />
 
-        <TextView
-            android:layout_width="118dp"
-            android:layout_height="wrap_content"
-            android:text="   /24"
-            android:id="@+id/text19"
-            android:textSize="28dp"
-            android:layout_weight="2.46"
-            android:textIsSelectable="false"
-            android:textColor="#EEEEEE"
-            android:background="#e53935"
-            android:layout_below="@+id/text17"
-            android:layout_alignParentEnd="true"
-            android:layout_alignStart="@+id/text17" />
+            <TextView
+                android:id="@+id/text19"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignStart="@+id/text17"
+                android:layout_below="@+id/text17"
+                android:layout_weight="2.46"
+                android:background="#8E24AA"
+                android:text="   /24"
+                android:textColor="#EEEEEE"
+                android:textIsSelectable="false"
+                android:textSize="28dp" />
 
-        <TextView
-            android:layout_width="118dp"
-            android:layout_height="wrap_content"
-            android:text="防災訓練"
-            android:id="@+id/text20"
-            android:textSize="28dp"
-            android:layout_weight="2.46"
-            android:textIsSelectable="false"
-            android:textColor="#EEEEEE"
-            android:background="#e53935"
-            android:layout_alignEnd="@+id/text19"
-            android:layout_alignTop="@+id/text19"
-            android:layout_alignStart="@+id/text18" />
+            <TextView
+                android:id="@+id/text20"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/text19"
+                android:layout_alignStart="@+id/text18"
+                android:layout_alignTop="@+id/text19"
+                android:layout_weight="2.46"
+                android:background="#8E24AA"
+                android:text="防災訓練"
+                android:textColor="#EEEEEE"
+                android:textIsSelectable="false"
+                android:textSize="28dp" />
 
-        <TextView
-            android:layout_width="118dp"
-            android:layout_height="wrap_content"
-            android:text="   /27"
-            android:id="@+id/text21"
-            android:textSize="28dp"
-            android:layout_weight="2.46"
-            android:textIsSelectable="false"
-            android:textColor="#EEEEEE"
-            android:background="#e53935"
-            android:layout_below="@+id/text19"
-            android:layout_alignParentStart="true" />
+            <TextView
+                android:id="@+id/text21"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/text19"
+                android:layout_weight="2.46"
+                android:background="#8E24AA"
+                android:text="   /27"
+                android:textColor="#EEEEEE"
+                android:textIsSelectable="false"
+                android:textSize="28dp" />
 
-        <TextView
-            android:layout_width="118dp"
-            android:layout_height="wrap_content"
-            android:text="第1回オープンキャンパス"
-            android:id="@+id/text22"
-            android:textSize="28dp"
-            android:layout_weight="2.46"
-            android:textIsSelectable="false"
-            android:textColor="#EEEEEE"
-            android:background="#e53935"
-            android:layout_below="@+id/text19"
-            android:layout_alignStart="@+id/text20"
-            android:layout_alignParentEnd="true" />
+            <TextView
+                android:id="@+id/text22"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignStart="@+id/text20"
+                android:layout_below="@+id/text19"
+                android:layout_weight="2.46"
+                android:background="#8E24AA"
+                android:text="第1回オープンキャンパス"
+                android:textColor="#EEEEEE"
+                android:textIsSelectable="false"
+                android:textSize="28dp" />
 
-        <TextView
-            android:layout_width="118dp"
-            android:layout_height="wrap_content"
-            android:text="7"
-            android:id="@+id/text23"
-            android:textSize="40dp"
-            android:layout_weight="2.46"
-            android:background="#424242"
-            android:textColor="#EEEEEE"
-            android:layout_below="@+id/text21"
-            android:layout_alignStart="@+id/text21"
-            android:layout_alignEnd="@+id/text24" />
+            <TextView
+                android:id="@+id/text23"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/text24"
+                android:layout_alignStart="@+id/text21"
+                android:layout_below="@+id/text21"
+                android:layout_weight="2.46"
+                android:background="#4527A0"
+                android:text="7"
+                android:textColor="#EEEEEE"
+                android:textSize="40dp" />
 
-        <TextView
-            android:layout_width="118dp"
-            android:layout_height="wrap_content"
-            android:text="july"
-            android:id="@+id/text24"
-            android:textSize="28dp"
-            android:layout_weight="2.46"
-            android:textIsSelectable="false"
-            android:textColor="#EEEEEE"
-            android:layout_alignBottom="@+id/text23"
-            android:layout_alignStart="@+id/text16"
-            android:layout_alignEnd="@+id/text19" />
+            <TextView
+                android:id="@+id/text24"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/text23"
+                android:layout_alignEnd="@+id/text19"
+                android:layout_alignStart="@+id/text16"
+                android:layout_weight="2.46"
+                android:text="july"
+                android:textColor="#EEEEEE"
+                android:textIsSelectable="false"
+                android:textSize="28dp" />
 
-        <TextView
-            android:layout_width="118dp"
-            android:layout_height="wrap_content"
-            android:text="   /8"
-            android:id="@+id/text25"
-            android:textSize="28dp"
-            android:layout_weight="2.46"
-            android:textIsSelectable="false"
-            android:textColor="#EEEEEE"
-            android:background="#757575"
-            android:layout_below="@+id/text23"
-            android:layout_alignStart="@+id/text23" />
+            <TextView
+                android:id="@+id/text25"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/text23"
+                android:layout_below="@+id/text23"
+                android:layout_weight="2.46"
+                android:background="#5E35B1"
+                android:text="   /8"
+                android:textColor="#EEEEEE"
+                android:textIsSelectable="false"
+                android:textSize="28dp" />
 
-        <TextView
-            android:layout_width="118dp"
-            android:layout_height="wrap_content"
-            android:text="応用課程一般入試"
-            android:id="@+id/text26"
-            android:textSize="28dp"
-            android:layout_weight="2.46"
-            android:textIsSelectable="false"
-            android:textColor="#EEEEEE"
-            android:background="#757575"
-            android:layout_alignEnd="@+id/text23"
-            android:layout_below="@+id/text23"
-            android:layout_alignStart="@+id/text22" />
+            <TextView
+                android:id="@+id/text26"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/text23"
+                android:layout_alignStart="@+id/text22"
+                android:layout_below="@+id/text23"
+                android:layout_weight="2.46"
+                android:background="#5E35B1"
+                android:text="応用課程一般入試"
+                android:textColor="#EEEEEE"
+                android:textIsSelectable="false"
+                android:textSize="28dp" />
 
-        <TextView
-            android:layout_width="118dp"
-            android:layout_height="wrap_content"
-            android:text="   /25"
-            android:id="@+id/text27"
-            android:textSize="28dp"
-            android:layout_weight="2.46"
-            android:textIsSelectable="false"
-            android:textColor="#EEEEEE"
-            android:background="#757575"
-            android:layout_below="@+id/text25"
-            android:layout_alignParentStart="true" />
+            <TextView
+                android:id="@+id/text27"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/text25"
+                android:layout_weight="2.46"
+                android:background="#5E35B1"
+                android:text="   /25"
+                android:textColor="#EEEEEE"
+                android:textIsSelectable="false"
+                android:textSize="28dp" />
 
-        <TextView
-            android:layout_width="118dp"
-            android:layout_height="wrap_content"
-            android:text="学園祭 第2回オープンキャンパス"
-            android:id="@+id/text28"
-            android:textSize="28dp"
-            android:layout_weight="2.46"
-            android:textIsSelectable="false"
-            android:textColor="#EEEEEE"
-            android:background="#757575"
-            android:layout_alignTop="@+id/text27"
-            android:layout_alignParentEnd="true"
-            android:layout_alignStart="@+id/text26" />
+            <TextView
+                android:id="@+id/text28"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignStart="@+id/text26"
+                android:layout_alignTop="@+id/text27"
+                android:layout_weight="2.46"
+                android:background="#5E35B1"
+                android:text="学園祭 第2回オープンキャンパス"
+                android:textColor="#EEEEEE"
+                android:textIsSelectable="false"
+                android:textSize="28dp" />
 
-        <TextView
-            android:layout_width="118dp"
-            android:layout_height="wrap_content"
-            android:text="   /28-"
-            android:id="@+id/text29"
-            android:textSize="28dp"
-            android:layout_weight="2.46"
-            android:textIsSelectable="false"
-            android:textColor="#EEEEEE"
-            android:background="#757575"
-            android:layout_below="@+id/text27"
-            android:layout_alignParentStart="true" />
+            <TextView
+                android:id="@+id/text29"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/text27"
+                android:layout_weight="2.46"
+                android:background="#5E35B1"
+                android:text="   /28-"
+                android:textColor="#EEEEEE"
+                android:textIsSelectable="false"
+                android:textSize="28dp" />
 
-        <TextView
-            android:layout_width="118dp"
-            android:layout_height="wrap_content"
-            android:text="夏季休暇"
-            android:id="@+id/text30"
-            android:textSize="28dp"
-            android:layout_weight="2.46"
-            android:textIsSelectable="false"
-            android:textColor="#EEEEEE"
-            android:background="#757575"
-            android:layout_alignParentEnd="true"
-            android:layout_alignTop="@+id/text29"
-            android:layout_alignStart="@+id/text28" />
+            <TextView
+                android:id="@+id/text30"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignStart="@+id/text28"
+                android:layout_alignTop="@+id/text29"
+                android:layout_weight="2.46"
+                android:background="#5E35B1"
+                android:text="夏季休暇"
+                android:textColor="#EEEEEE"
+                android:textIsSelectable="false"
+                android:textSize="28dp" />
 
-        <TextView
-            android:layout_width="118dp"
-            android:layout_height="wrap_content"
-            android:text="8"
-            android:id="@+id/text31"
-            android:textSize="40dp"
-            android:layout_weight="2.46"
-            android:background="#EF6C00"
-            android:textColor="#EEEEEE"
-            android:layout_below="@+id/text29"
-            android:layout_alignStart="@+id/text29"
-            android:layout_alignParentEnd="true" />
+            <TextView
+                android:id="@+id/text31"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignStart="@+id/text29"
+                android:layout_below="@+id/text29"
+                android:layout_weight="2.46"
+                android:background="#283593"
+                android:text="8"
+                android:textColor="#EEEEEE"
+                android:textSize="40dp" />
 
-        <TextView
-            android:layout_width="118dp"
-            android:layout_height="wrap_content"
-            android:text="august"
-            android:id="@+id/text32"
-            android:textSize="28dp"
-            android:layout_weight="2.46"
-            android:textIsSelectable="false"
-            android:textColor="#EEEEEE"
-            android:layout_alignBottom="@+id/text31"
-            android:layout_alignStart="@+id/text24" />
+            <TextView
+                android:id="@+id/text32"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/text33"
+                android:layout_alignStart="@+id/text24"
+                android:layout_weight="2.46"
+                android:text="august"
+                android:textColor="#EEEEEE"
+                android:textIsSelectable="false"
+                android:textSize="28dp" />
 
-        <TextView
-            android:layout_width="118dp"
-            android:layout_height="wrap_content"
-            android:text="  -/23"
-            android:id="@+id/text33"
-            android:textSize="28dp"
-            android:layout_weight="2.46"
-            android:textIsSelectable="false"
-            android:textColor="#EEEEEE"
-            android:layout_below="@+id/text31"
-            android:layout_alignStart="@+id/text31"
-            android:background="#FB8C00"
-            android:layout_alignParentEnd="true" />
+            <TextView
+                android:id="@+id/text33"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignStart="@+id/text31"
+                android:layout_below="@+id/text31"
+                android:layout_weight="2.46"
+                android:background="#3949AB"
+                android:text="  -/23"
+                android:textColor="#EEEEEE"
+                android:textIsSelectable="false"
+                android:textSize="28dp" />
 
-        <TextView
-            android:layout_width="118dp"
-            android:layout_height="wrap_content"
-            android:text="夏季休暇"
-            android:id="@+id/text34"
-            android:textSize="28dp"
-            android:layout_weight="2.46"
-            android:textIsSelectable="false"
-            android:textColor="#EEEEEE"
-            android:background="#FB8C00"
-            android:layout_alignTop="@+id/text33"
-            android:layout_alignStart="@+id/text30" />
+            <TextView
+                android:id="@+id/text34"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/text30"
+                android:layout_alignTop="@+id/text33"
+                android:layout_weight="2.46"
+                android:background="#3949AB"
+                android:text="夏季休暇"
+                android:textColor="#EEEEEE"
+                android:textIsSelectable="false"
+                android:textSize="28dp" />
 
-        <TextView
-            android:layout_width="118dp"
-            android:layout_height="wrap_content"
-            android:text="   /22"
-            android:id="@+id/text35"
-            android:textSize="28dp"
-            android:layout_weight="2.46"
-            android:textIsSelectable="false"
-            android:textColor="#EEEEEE"
-            android:background="#FB8C00"
-            android:layout_below="@+id/text33"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentStart="true" />
+            <TextView
+                android:id="@+id/text35"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/text33"
+                android:layout_weight="2.46"
+                android:background="#3949AB"
+                android:text="   /22"
+                android:textColor="#EEEEEE"
+                android:textIsSelectable="false"
+                android:textSize="28dp" />
 
-        <TextView
-            android:layout_width="118dp"
-            android:layout_height="wrap_content"
-            android:text="第3回オープンキャンパス"
-            android:id="@+id/text36"
-            android:textSize="28dp"
-            android:layout_weight="2.46"
-            android:textIsSelectable="false"
-            android:textColor="#EEEEEE"
-            android:background="#FB8C00"
-            android:layout_alignEnd="@+id/text35"
-            android:layout_below="@+id/text34"
-            android:layout_alignStart="@+id/text34" />
+            <TextView
+                android:id="@+id/text36"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/text35"
+                android:layout_alignStart="@+id/text34"
+                android:layout_below="@+id/text34"
+                android:layout_weight="2.46"
+                android:background="#3949AB"
+                android:text="第3回オープンキャンパス"
+                android:textColor="#EEEEEE"
+                android:textIsSelectable="false"
+                android:textSize="28dp" />
 
-        <TextView
-            android:layout_width="118dp"
-            android:layout_height="wrap_content"
-            android:text="9"
-            android:id="@+id/text37"
-            android:textSize="40dp"
-            android:layout_weight="2.46"
-            android:background="#2E7D32"
-            android:textColor="#EEEEEE"
-            android:layout_below="@+id/text35"
-            android:layout_alignStart="@+id/text35"
-            android:layout_alignParentEnd="true" />
+            <TextView
+                android:id="@+id/text37"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignStart="@+id/text35"
+                android:layout_below="@+id/text35"
+                android:layout_weight="2.46"
+                android:background="#1565C0"
+                android:text="9"
+                android:textColor="#EEEEEE"
+                android:textSize="40dp" />
 
-
-
-        <TextView
-            android:layout_width="118dp"
-            android:layout_height="wrap_content"
-            android:text="september"
-            android:id="@+id/text38"
-            android:textSize="28dp"
-            android:layout_weight="2.46"
-            android:textIsSelectable="false"
-            android:textColor="#EEEEEE"
-            android:singleLine="false"
-            android:layout_below="@+id/text35"
-            android:layout_alignStart="@+id/text32"
-            android:layout_alignParentBottom="true"
-            android:layout_alignEnd="@+id/text34" />
+            <TextView
+                android:id="@+id/text39"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/text37"
+                android:layout_alignEnd="@+id/text35"
+                android:layout_alignStart="@+id/text32"
+                android:layout_weight="2.46"
+                android:text="september"
+                android:textColor="#EEEEEE"
+                android:textSize="28dp" />
 
 
+            <TextView
+                android:id="@+id/text40"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/text37"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/text37"
+                android:layout_weight="2.46"
+                android:background="#1E88E5"
+                android:text="   /25"
+                android:textColor="#EEEEEE"
+                android:textIsSelectable="false"
+                android:textSize="28dp" />
+
+            <TextView
+                android:id="@+id/text41"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignStart="@+id/text36"
+                android:layout_below="@+id/text37"
+                android:layout_weight="2.46"
+                android:text="球技大会"
+                android:textColor="#EEEEEE"
+                android:textIsSelectable="false"
+                android:textSize="28dp" />
 
 
-        <TextView
-            android:layout_width="118dp"
-            android:layout_height="wrap_content"
-            android:text="  -/23"
-            android:id="@+id/text39"
-            android:textSize="28dp"
-            android:layout_weight="2.46"
-            android:textIsSelectable="false"
-            android:textColor="#EEEEEE"
-            android:layout_below="@+id/text31"
-            android:layout_alignStart="@+id/text31"
-            android:background="#FB8C00"
-            android:layout_alignParentEnd="true" />
+            <TextView
+                android:id="@+id/text42"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/text40"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/text40"
+                android:layout_toStartOf="@+id/text41"
+                android:layout_weight="2.46"
+                android:background="#0277BD"
+                android:text="10"
+                android:textColor="#EEEEEE"
+                android:textSize="40dp" />
 
 
+            <TextView
+                android:id="@+id/text43"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/text42"
+                android:layout_alignEnd="@+id/text40"
+                android:layout_alignParentStart="true"
+                android:layout_weight="2.46"
+                android:text="       october"
+                android:textColor="#EEEEEE"
+                android:textSize="28dp" />
+
+            <TextView
+                android:id="@+id/text44"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/text42"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/text42"
+                android:layout_weight="2.46"
+                android:background="#039BE5"
+                android:text="   /3"
+                android:textColor="#EEEEEE"
+                android:textIsSelectable="false"
+                android:textSize="28dp" />
+
+            <TextView
+                android:id="@+id/text45"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignStart="@+id/text41"
+                android:layout_below="@+id/text42"
+                android:layout_weight="2.46"
+                android:text="東北ポリテクニックビジョン"
+                android:textColor="#EEEEEE"
+                android:textIsSelectable="false"
+                android:textSize="28dp" />
+
+            <TextView
+                android:id="@+id/text46"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/text39"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/text44"
+                android:layout_weight="2.46"
+                android:background="#039BE5"
+                android:text="   /24"
+                android:textColor="#EEEEEE"
+                android:textIsSelectable="false"
+                android:textSize="28dp" />
 
 
+            <TextView
+                android:id="@+id/text47"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/text46"
+                android:layout_alignStart="@+id/text45"
+                android:layout_below="@+id/text44"
+                android:layout_weight="2.46"
+                android:text="専門課程特別推薦入試"
+                android:textColor="#EEEEEE"
+                android:textIsSelectable="false"
+                android:textSize="28dp" />
 
-    </RelativeLayout>
+            <TextView
+                android:id="@+id/text48"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/text46"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/text47"
+                android:layout_weight="2.46"
+                android:background="#039BE5"
+                android:text="   /31"
+                android:textColor="#EEEEEE"
+                android:textSize="28dp" />
+
+            <TextView
+                android:id="@+id/text49"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignStart="@+id/text47"
+                android:layout_below="@+id/text46"
+                android:layout_weight="2.46"
+                android:text="第4回オープンキャンパス"
+                android:textColor="#EEEEEE"
+                android:textIsSelectable="false"
+                android:textSize="28dp" />
+
+            <TextView
+                android:id="@+id/text50"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/text48"
+                android:layout_weight="2.46"
+                android:background="#00838F"
+                android:text="11"
+                android:textColor="#EEEEEE"
+                android:textSize="40dp" />
+
+
+            <TextView
+                android:id="@+id/text51"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/text52"
+                android:layout_alignEnd="@+id/text48"
+                android:layout_alignParentStart="true"
+                android:layout_weight="2.46"
+                android:text="       november"
+                android:textColor="#EEEEEE"
+                android:textSize="28dp" />
+
+
+            <TextView
+                android:id="@+id/text52"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/text46"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/text50"
+                android:layout_weight="2.46"
+                android:background="#00ACC1"
+                android:text="   /14"
+                android:textColor="#EEEEEE"
+                android:textSize="28dp" />
+
+            <TextView
+                android:id="@+id/text53"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignStart="@+id/text49"
+                android:layout_below="@+id/text50"
+                android:layout_weight="2.46"
+                android:text="専門課程一般公募推薦入試"
+                android:textColor="#EEEEEE"
+                android:textIsSelectable="false"
+                android:textSize="28dp" />
+
+            <TextView
+                android:id="@+id/text54"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/text40"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/text52"
+                android:layout_toStartOf="@+id/text41"
+                android:layout_weight="2.46"
+                android:background="#00695C"
+                android:text="12"
+                android:textColor="#EEEEEE"
+                android:textSize="40dp" />
+
+            <TextView
+                android:id="@+id/text55"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/text54"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:layout_weight="2.46"
+                android:text="       december"
+                android:textColor="#EEEEEE"
+                android:textSize="28dp" />
+
+            <TextView
+                android:id="@+id/text56"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/text46"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/text54"
+                android:layout_weight="2.46"
+                android:background="#00897B"
+                android:text="   /12"
+                android:textColor="#EEEEEE"
+                android:textSize="28dp" />
+
+
+            <TextView
+                android:id="@+id/text57"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/text54"
+                android:layout_alignStart="@+id/text53"
+                android:layout_below="@+id/text54"
+                android:layout_weight="2.46"
+                android:text="専門課程自己推薦入試"
+                android:textColor="#EEEEEE"
+                android:textIsSelectable="false"
+                android:textSize="28dp" />
+
+
+            <TextView
+                android:id="@+id/text58"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/text46"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/text56"
+                android:layout_weight="2.46"
+                android:background="#00897B"
+                android:text="   /23-"
+                android:textColor="#EEEEEE"
+                android:textSize="28dp" />
+
+            <TextView
+                android:id="@+id/text59"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/text54"
+                android:layout_alignStart="@+id/text53"
+                android:layout_below="@+id/text57"
+                android:layout_weight="2.46"
+                android:text="冬期休暇"
+                android:textColor="#EEEEEE"
+                android:textIsSelectable="false"
+                android:textSize="28dp" />
+
+            <TextView
+                android:id="@+id/text60"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/text40"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/text58"
+                android:layout_toStartOf="@+id/text41"
+                android:layout_weight="2.46"
+                android:background="#2E7D32"
+                android:text="1"
+                android:textColor="#EEEEEE"
+                android:textSize="40dp" />
+
+
+            <TextView
+                android:id="@+id/text61"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/text60"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:layout_weight="2.46"
+                android:text="   january"
+                android:textColor="#EEEEEE"
+                android:textSize="28dp" />
+
+
+            <TextView
+                android:id="@+id/text62"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/text46"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/text60"
+                android:layout_weight="2.46"
+                android:background="#43A047"
+                android:text="  -/5"
+                android:textColor="#EEEEEE"
+                android:textSize="28dp" />
+
+            <TextView
+                android:id="@+id/text63"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/text60"
+                android:layout_alignStart="@+id/text59"
+                android:layout_below="@+id/text60"
+                android:layout_weight="2.46"
+                android:text="冬期休暇"
+                android:textColor="#EEEEEE"
+                android:textIsSelectable="false"
+                android:textSize="28dp" />
+
+            <TextView
+                android:id="@+id/text64"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/text46"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/text62"
+                android:layout_weight="2.46"
+                android:background="#43A047"
+                android:text="   /22"
+                android:textColor="#EEEEEE"
+                android:textSize="28dp" />
+
+            <TextView
+                android:id="@+id/text65"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/text62"
+                android:layout_alignStart="@+id/text63"
+                android:layout_below="@+id/text62"
+                android:layout_weight="2.46"
+                android:text="合同業界研究会"
+                android:textColor="#EEEEEE"
+                android:textIsSelectable="false"
+                android:textSize="28dp" />
+
+            <TextView
+                android:id="@+id/text66"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/text40"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/text64"
+                android:layout_toStartOf="@+id/text41"
+                android:layout_weight="2.46"
+                android:background="#558B2F"
+                android:text="2"
+                android:textColor="#EEEEEE"
+                android:textSize="40dp" />
+
+            <TextView
+                android:id="@+id/text67"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/text66"
+                android:layout_alignStart="@+id/text39"
+                android:layout_weight="2.46"
+                android:text="   february"
+                android:textColor="#EEEEEE"
+                android:textSize="28dp" />
+
+            <TextView
+                android:id="@+id/text68"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/text46"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/text66"
+                android:layout_weight="2.46"
+                android:background="#7CB342"
+                android:text="   /4"
+                android:textColor="#EEEEEE"
+                android:textSize="28dp" />
+
+
+            <TextView
+                android:id="@+id/text69"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/text66"
+                android:layout_alignStart="@+id/text65"
+                android:layout_below="@+id/text66"
+                android:layout_weight="2.46"
+                android:text="専門課程一般入試"
+                android:textColor="#EEEEEE"
+                android:textIsSelectable="false"
+                android:textSize="28dp" />
+
+            <TextView
+                android:id="@+id/text70"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/text46"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/text68"
+                android:layout_weight="2.46"
+                android:background="#7CB342"
+                android:text="   /19"
+                android:textColor="#EEEEEE"
+                android:textSize="28dp" />
+
+            <TextView
+                android:id="@+id/text71"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignStart="@+id/text69"
+                android:layout_below="@+id/text68"
+                android:layout_weight="2.46"
+                android:text="東北ポリテクニックビジョン"
+                android:textColor="#EEEEEE"
+                android:textIsSelectable="false"
+                android:textSize="28dp" />
+
+
+            <TextView
+                android:id="@+id/text72"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/text40"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/text70"
+                android:layout_toStartOf="@+id/text41"
+                android:layout_weight="2.46"
+                android:background="#9E9D24"
+                android:text="3"
+                android:textColor="#EEEEEE"
+                android:textSize="40dp" />
+
+            <TextView
+                android:id="@+id/text73"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/text72"
+                android:layout_alignStart="@+id/text67"
+                android:layout_weight="2.46"
+                android:text="march"
+                android:textColor="#EEEEEE"
+                android:textSize="28dp" />
+
+            <TextView
+                android:id="@+id/text74"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/text46"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/text72"
+                android:layout_weight="2.46"
+                android:background="#C0CA33"
+                android:text="   /10"
+                android:textColor="#EEEEEE"
+                android:textSize="28dp" />
+
+            <TextView
+                android:id="@+id/text75"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/text72"
+                android:layout_alignStart="@+id/text71"
+                android:layout_below="@+id/text72"
+                android:layout_weight="2.46"
+                android:text="専門課程自己推薦入試"
+                android:textColor="#EEEEEE"
+                android:textIsSelectable="false"
+                android:textSize="28dp" />
+
+            <TextView
+                android:id="@+id/text76"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/text46"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/text74"
+                android:layout_weight="2.46"
+                android:background="#C0CA33"
+                android:text="   /18"
+                android:textColor="#EEEEEE"
+                android:textSize="28dp" />
+
+            <TextView
+                android:id="@+id/text77"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignStart="@+id/text75"
+                android:layout_below="@+id/text74"
+                android:layout_weight="2.46"
+                android:text="卒業式"
+                android:textColor="#EEEEEE"
+                android:textIsSelectable="false"
+                android:textSize="28dp" />
+
+            <TextView
+                android:id="@+id/text78"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/text46"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/text76"
+                android:layout_weight="2.46"
+                android:background="#C0CA33"
+                android:text="   /19-"
+                android:textColor="#EEEEEE"
+                android:textSize="28dp" />
+
+            <TextView
+                android:id="@+id/text79"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignStart="@+id/text77"
+                android:layout_below="@+id/text76"
+                android:layout_weight="2.46"
+                android:text="春期休暇"
+                android:textColor="#EEEEEE"
+                android:textIsSelectable="false"
+                android:textSize="28dp" />
+
+
+        </RelativeLayout>
     </ScrollView>
 </RelativeLayout>
