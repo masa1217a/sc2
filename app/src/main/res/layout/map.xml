@@ -1,273 +1,272 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-
-
-
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent" android:layout_height="fill_parent">
-
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/imageView"
-        android:src="@drawable/back"
-        android:scaleType="centerCrop"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true" />
+    android:layout_width="fill_parent" android:layout_height="fill_parent"  >
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="MAP"
-        android:id="@+id/textView2"
-        android:textSize="50dp"
-        android:textColor="#66dac8"
-        android:layout_below="@+id/textView4"
-        android:layout_alignParentStart="true" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="東北職業能力開発大学校"
-        android:id="@+id/textView3"
+        android:id="@+id/text"
+        android:textSize="60dp"
+        android:textIsSelectable="false"
+        android:background="#c62828"
+        android:autoText="false"
+        android:textColor="#EEEEEE"
         android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true"
-        android:textSize="54dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TOHOKU POLYTECHNIC COLLEGE"
-        android:id="@+id/textView4"
-        android:textSize="30dp"
-        android:layout_below="@+id/textView3"
-        android:layout_centerHorizontal="true"
-        android:textColor="#66dac8" />
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
 
 
     <ImageView
         android:id="@+id/imageview10"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="230dp"
         android:src="@drawable/img_map"
-        android:layout_below="@+id/textView2"
+        android:layout_below="@+id/text"
+        android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true" />
 
-     <TextView
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
-         android:text="1"
-         android:id="@+id/textView7"
-         android:textStyle="bold"
-         android:textSize="21dp"
-         android:layout_alignTop="@+id/textView8"
-         android:layout_alignStart="@+id/textView11" />
-
-    <TextView
+    <ImageView
+        android:id="@+id/imageview2"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="   1号館(事務本部)"
-        android:id="@+id/textView8"
-        android:textSize="20dp"
-        android:layout_below="@+id/imageview10"
-        android:layout_alignStart="@+id/textView12" />
+        android:layout_height="230dp"
+        android:src="@drawable/img_map"
+        android:layout_below="@+id/text"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="2"
-        android:id="@+id/textView9"
-        android:textStyle="bold"
-        android:textSize="21dp"
-        android:layout_alignTop="@+id/textView10"
-        android:layout_centerHorizontal="true" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="   2号館（一般教室、図書室）"
-        android:id="@+id/textView10"
-        android:textSize="20dp"
-        android:layout_alignTop="@+id/textView8"
-        android:layout_toEndOf="@+id/textView9" />
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/ScrollView1"
+        android:layout_width="846dp"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:layout_gravity="center|top"
+        android:fillViewport="false"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/imageview10">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="3"
-        android:id="@+id/textView11"
-        android:textStyle="bold"
-        android:textSize="21dp"
-        android:layout_alignTop="@+id/textView12"
-        android:layout_toStartOf="@+id/textView12" />
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:weightSum="1"
+            android:layout_alignTop="@+id/ScrollView1"
+            android:layout_centerHorizontal="true">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="   3号館（共通実習棟）"
-        android:id="@+id/textView12"
-        android:textSize="20dp"
-        android:layout_centerVertical="true"
-        android:layout_toStartOf="@+id/textView13"
-        android:layout_marginEnd="36dp" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="4"
-        android:id="@+id/textView13"
-        android:textStyle="bold"
-        android:textSize="21dp"
-        android:layout_alignBottom="@+id/textView12"
-        android:layout_alignStart="@+id/textView9" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1:1号館(事務室)"
+                android:id="@+id/text1"
+                android:textSize="30dp"
+                android:textIsSelectable="false"
+                android:background="#e53935"
+                android:autoText="false"
+                android:textColor="#EEEEEE"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="   4号館（機械系実習棟）"
-        android:id="@+id/textView14"
-        android:textSize="20dp"
-        android:layout_alignTop="@+id/textView12"
-        android:layout_alignStart="@+id/textView10" />
 
-    <TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="5"
-    android:id="@+id/textView15"
-    android:textStyle="bold"
-    android:textSize="21dp"
-        android:layout_marginTop="31dp"
-        android:layout_below="@+id/textView11"
-        android:layout_alignStart="@+id/textView11" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2:2号館（一般教室、図書室）"
+                android:id="@+id/text2"
+                android:textSize="30dp"
+                android:textIsSelectable="false"
+                android:background="#e53935"
+                android:autoText="false"
+                android:textColor="#EEEEEE"
+                android:layout_below="@+id/text1"
+                android:layout_alignParentEnd="true"
+                android:layout_alignStart="@+id/text1" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="   5号館（住居系実習棟）"
-        android:id="@+id/textView16"
-        android:textSize="20dp"
-        android:layout_alignBottom="@+id/textView15"
-        android:layout_alignStart="@+id/textView12" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3:3号館（共通実習棟）"
+                android:id="@+id/text3"
+                android:textSize="30dp"
+                android:textIsSelectable="false"
+                android:background="#e53935"
+                android:autoText="false"
+                android:textColor="#EEEEEE"
+                android:layout_below="@+id/text2"
+                android:layout_alignParentEnd="true"
+                android:layout_alignStart="@+id/text1" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="6"
-        android:id="@+id/textView17"
-        android:textStyle="bold"
-        android:textSize="21dp"
-        android:layout_alignTop="@+id/textView16"
-        android:layout_toStartOf="@+id/textView18" />
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4:4号館（機械系実習棟）"
+            android:id="@+id/text4"
+            android:textSize="30dp"
+            android:textIsSelectable="false"
+            android:background="#e53935"
+            android:autoText="false"
+            android:textColor="#EEEEEE"
+            android:layout_below="@+id/text3"
+            android:layout_alignParentEnd="true"
+            android:layout_alignStart="@+id/text1" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="   6号館（機械・電子系実習棟）"
-        android:id="@+id/textView18"
-        android:textSize="20dp"
-        android:layout_alignTop="@+id/textView17"
-        android:layout_alignStart="@+id/textView14" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5:5号館（住居系実習棟）"
+                android:id="@+id/text5"
+                android:textSize="30dp"
+                android:textIsSelectable="false"
+                android:background="#e53935"
+                android:autoText="false"
+                android:textColor="#EEEEEE"
+                android:layout_below="@+id/text4"
+                android:layout_alignParentEnd="true"
+                android:layout_alignStart="@+id/text1" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="7"
-        android:id="@+id/textView19"
-        android:textStyle="bold"
-        android:textSize="21dp"
-        android:layout_alignBaseline="@+id/textView21"
-        android:layout_alignBottom="@+id/textView21"
-        android:layout_alignStart="@+id/textView15" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6:6号館（機械・電子情報系実習棟）"
+                android:id="@+id/text6"
+                android:textSize="30dp"
+                android:textIsSelectable="false"
+                android:background="#e53935"
+                android:autoText="false"
+                android:textColor="#EEEEEE"
+                android:layout_below="@+id/text5"
+                android:layout_alignParentEnd="true"
+                android:layout_alignStart="@+id/text1" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="   7号館（応用教室実習棟）"
-        android:id="@+id/textView20"
-        android:textSize="20dp"
-        android:layout_marginTop="34dp"
-        android:layout_below="@+id/textView17"
-        android:layout_alignStart="@+id/textView16" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7:7号館（応用課程、教室、実習棟）"
+                android:id="@+id/text7"
+                android:textSize="30dp"
+                android:textIsSelectable="false"
+                android:background="#e53935"
+                android:autoText="false"
+                android:textColor="#EEEEEE"
+                android:layout_below="@+id/text6"
+                android:layout_alignParentEnd="true"
+                android:layout_alignStart="@+id/text1" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="8"
-        android:id="@+id/textView21"
-        android:textStyle="bold"
-        android:textSize="21dp"
-        android:layout_alignTop="@+id/textView20"
-        android:layout_alignStart="@+id/textView17" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8:階段教室"
+                android:id="@+id/text8"
+                android:textSize="30dp"
+                android:textIsSelectable="false"
+                android:background="#e53935"
+                android:autoText="false"
+                android:textColor="#EEEEEE"
+                android:layout_below="@+id/text7"
+                android:layout_alignParentEnd="true"
+                android:layout_alignStart="@+id/text1" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="   階段教室"
-        android:id="@+id/textView22"
-        android:textSize="20dp"
-        android:layout_alignBottom="@+id/textView21"
-        android:layout_alignStart="@+id/textView18" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9:体育館"
+                android:id="@+id/text9"
+                android:textSize="30dp"
+                android:textIsSelectable="false"
+                android:background="#e53935"
+                android:autoText="false"
+                android:textColor="#EEEEEE"
+                android:layout_below="@+id/text8"
+                android:layout_alignParentEnd="true"
+                android:layout_alignStart="@+id/text1" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="9"
-        android:id="@+id/textView23"
-        android:textStyle="bold"
-        android:textSize="21dp"
-        android:layout_below="@+id/textView19"
-        android:layout_alignStart="@+id/textView19"
-        android:layout_marginTop="32dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10:学生ホール[食堂]"
+                android:id="@+id/text10"
+                android:textSize="30dp"
+                android:textIsSelectable="false"
+                android:background="#e53935"
+                android:autoText="false"
+                android:textColor="#EEEEEE"
+                android:layout_below="@+id/text9"
+                android:layout_alignParentEnd="true"
+                android:layout_alignStart="@+id/text1" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="   体育館"
-        android:id="@+id/textView24"
-        android:textSize="20dp"
-        android:layout_alignTop="@+id/textView23"
-        android:layout_alignStart="@+id/textView20" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="11:男子学生寮[三峰寮]"
+                android:id="@+id/text11"
+                android:textSize="30dp"
+                android:textIsSelectable="false"
+                android:background="#e53935"
+                android:autoText="false"
+                android:textColor="#EEEEEE"
+                android:layout_below="@+id/text10"
+                android:layout_alignParentEnd="true"
+                android:layout_alignStart="@+id/text1" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="10"
-        android:id="@+id/textView25"
-        android:textStyle="bold"
-        android:textSize="21dp"
-        android:layout_alignTop="@+id/textView26"
-        android:layout_centerHorizontal="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12:学生寮入口・管理室・食堂"
+                android:id="@+id/text12"
+                android:textSize="30dp"
+                android:textIsSelectable="false"
+                android:background="#e53935"
+                android:autoText="false"
+                android:textColor="#EEEEEE"
+                android:layout_below="@+id/text11"
+                android:layout_alignParentEnd="true"
+                android:layout_alignStart="@+id/text1" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="   学生ホール（食堂）"
-        android:id="@+id/textView26"
-        android:textSize="20dp"
-        android:layout_alignTop="@+id/textView24"
-        android:layout_toEndOf="@+id/textView25" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="13:女子学生寮[白萩寮]"
+                android:id="@+id/text13"
+                android:textSize="30dp"
+                android:textIsSelectable="false"
+                android:background="#e53935"
+                android:autoText="false"
+                android:textColor="#EEEEEE"
+                android:layout_below="@+id/text12"
+                android:layout_alignParentEnd="true"
+                android:layout_alignStart="@+id/text1" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="10"
-        android:id="@+id/textView27"
-        android:textStyle="bold"
-        android:textSize="21dp"
-        android:layout_alignTop="@+id/textView26"
-        android:layout_centerHorizontal="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="14:学園プラザ"
+                android:id="@+id/text14"
+                android:textSize="30dp"
+                android:textIsSelectable="false"
+                android:background="#e53935"
+                android:autoText="false"
+                android:textColor="#EEEEEE"
+                android:layout_below="@+id/text13"
+                android:layout_alignParentEnd="true"
+                android:layout_alignStart="@+id/text1" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="   学生ホール（食堂）"
-        android:id="@+id/textView28"
-        android:textSize="20dp"
-        android:layout_alignTop="@+id/textView24"
-        android:layout_toEndOf="@+id/textView25" />
 
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
 
 
 </RelativeLayout>
